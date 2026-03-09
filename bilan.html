@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Réalisations - Raphaël Fouque</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">Raphaël FOUQUE</a>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="realisations.html" class="active">Réalisations</a></li>
+                <li><a href="bilan.html">Bilan</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section container">
+            <h2>Bilan des Apprentissages - BUT 2 Informatique</h2>
+
+            <div class="project-description" style="margin-bottom: 50px;">
+                <p>Actuellement en deuxième année de BUT Informatique, j'ai choisi de m'orienter vers le parcours
+                    <strong>RACDV</strong> (Réalisation d'Applications : Conception, Développement, Validation). Ce
+                    choix marque une transition dans mon cursus : alors que ma troisième année sera quasi exclusivement
+                    dédiée au développement et à l'architecture logicielle, la fin de ce semestre valide mon niveau de
+                    maîtrise sur les piliers fondamentaux de l'informatique générale.
+                </p>
+                <br>
+                <p>Ce bilan d'apprentissage présente donc la validation finale de mes <strong>Compétences 3, 4 et
+                        5</strong> (Administration système, Gestion de données et Conduite de projet).</p>
+                <br>
+                <p>Même si ces matières ne seront plus au cœur de ma spécialisation l'année prochaine, elles constituent
+                    le socle de ma rigueur technique. À travers les projets détaillés ci-dessous, je démontre comment
+                    j'ai mobilisé ces acquis pour construire des solutions robustes, gérer des infrastructures complexes
+                    et mener des projets en équipe de manière autonome et professionnelle.</p>
+            </div>
+
+            <style>
+                .vision-block p {
+                    color: #eaeaea !important;
+                }
+
+                .vision-block h4 {
+                    margin-top: 25px;
+                    color: #fff;
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                    padding-bottom: 10px;
+                    margin-bottom: 20px;
+                }
+
+                .validations-list {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                }
+
+                .validation-item {
+                    background: rgba(255, 255, 255, 0.03);
+                    padding: 20px;
+                    border-radius: 12px;
+                    border: 1px solid rgba(255, 255, 255, 0.05);
+                    transition: all 0.3s ease;
+                }
+
+                .validation-item:hover {
+                    background: rgba(255, 255, 255, 0.06);
+                    border-color: rgba(255, 255, 255, 0.15);
+                    transform: translateX(5px);
+                }
+
+                .badge-container {
+                    display: flex;
+                    gap: 12px;
+                    margin-bottom: 12px;
+                    align-items: center;
+                    flex-wrap: wrap;
+                }
+
+                .badge {
+                    padding: 6px 14px;
+                    border-radius: 50px;
+                    font-size: 0.85rem;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    letter-spacing: 0.5px;
+                }
+
+                .badge-ac {
+                    background: rgba(0, 221, 255, 0.15);
+                    color: var(--color-cyan);
+                    border: 1px solid rgba(0, 221, 255, 0.4);
+                    box-shadow: 0 0 10px rgba(0, 221, 255, 0.1);
+                }
+
+                .badge-ce {
+                    background: rgba(0, 255, 115, 0.15);
+                    color: var(--color-green);
+                    border: 1px solid rgba(0, 255, 115, 0.4);
+                    box-shadow: 0 0 10px rgba(0, 255, 115, 0.1);
+                }
+
+                .validation-def {
+                    font-style: italic;
+                    font-size: 0.95rem;
+                    color: #b0b0b0;
+                    margin-bottom: 12px;
+                    display: block;
+                }
+
+                .validation-action {
+                    color: #ffffff;
+                    font-size: 1.05rem;
+                    line-height: 1.6;
+                    position: relative;
+                    padding-left: 15px;
+                    border-left: 2px solid var(--color-purple);
+                }
+            </style>
+
+            <!-- Projet 1 -->
+            <div class="vision-block"
+                style="border-left-color: var(--color-cyan); background: linear-gradient(90deg, rgba(0, 221, 255, 0.05) 0%, rgba(17, 0, 28, 0.6) 100%);">
+                <h3 style="color: var(--color-cyan);">1. Plateforme de Démocratie Participative (Web Fullstack)</h3>
+                <p><strong>Description :</strong> Développement sur 6 mois d'une application web complexe en équipe de
+                    4, permettant aux citoyens de soumettre des projets et de voter de manière sécurisée.</p>
+                <p><strong>Compétences mobilisées :</strong> Ce projet est le support principal de la Compétence 5
+                    (Conduire un projet) pour la gestion de l'équipe et de la Compétence 4 (Gérer des données) pour la
+                    sécurisation des informations citoyennes.</p>
+                <h4>Validations :</h4>
+                <div class="validations-list">
+                    <div class="validation-item">
+                        <div class="badge-container">
+                            <span class="badge badge-ac">AC 5.2</span>
+                            <span class="badge badge-ce">CE 1</span>
+                        </div>
+                        <span class="validation-def">« Formaliser les besoins du client et de l’utilisateur en
+                            communiquant efficacement avec les différents acteurs d'un projet »</span>
+                        <div class="validation-action">J'ai traduit les demandes fonctionnelles du tuteur en
+                            spécifications techniques ("User Stories") claires pour l'équipe de développement.</div>
+                    </div>
+                    <div class="validation-item">
+                        <div class="badge-container">
+                            <span class="badge badge-ac">AC 5.4</span>
+                            <span class="badge badge-ce">CE 4</span>
+                        </div>
+                        <span class="validation-def">« Définir et mettre en œuvre une démarche de suivi de projet en
+                            adoptant une démarche proactive, créative et critique »</span>
+                        <div class="validation-action">J'ai piloté l'utilisation de Jira pour le suivi des sprints, ce
+                            qui nous a permis de réévaluer nos priorités à chaque étape pour garantir la livraison.
+                        </div>
+                    </div>
+                    <div class="validation-item">
+                        <div class="badge-container">
+                            <span class="badge badge-ac">AC 4.2</span>
+                            <span class="badge badge-ce">CE 1</span>
+                        </div>
+                        <span class="validation-def">« Assurer la confidentialité des données (intégrité et sécurité) en
+                            respectant les réglementations sur la protection des données personnelles »</span>
+                        <div class="validation-action">J'ai implémenté le hachage des mots de passe et l'anonymisation
+                            des votes en base de données pour assurer la conformité RGPD.</div>
+                    </div>
+                    <div class="validation-item">
+                        <div class="badge-container">
+                            <span class="badge badge-ac">AC 3.1</span>
+                            <span class="badge badge-ce">CE 3</span>
+                        </div>
+                        <span class="validation-def">« Concevoir et développer des applications communicantes en offrant
+                            une qualité de service optimale »</span>
+                        <div class="validation-action">J'ai mis en place une architecture client-serveur fluide
+                            permettant des échanges de données rapides et fiables entre le front-end et le back-end PHP.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projet 2 -->
+            <div class="vision-block"
+                style="border-left-color: var(--color-green); background: linear-gradient(90deg, rgba(0, 255, 115, 0.05) 0%, rgba(17, 0, 28, 0.6) 100%);">
+                <h3 style="color: var(--color-green);">2. Infrastructure Réseau Coworking (SAE 2.03)</h3>
+                <p><strong>Description :</strong> Conception et déploiement en binôme d'une architecture réseau
+                    virtualisée (VirtualBox/GNS3) incluant la configuration de serveurs LAMP sécurisés.</p>
+                <p><strong>Compétences mobilisées :</strong> Ce projet valide la Compétence 3 (Administrer des systèmes
+                    complexes) par la maîtrise de la virtualisation et de la sécurité des services.</p>
+                <h4>Validations :</h4>
+                <div class="validations-list">
+                    <div class="validation-item">
+                        <div class="badge-container">
+                            <span class="badge badge-ac">AC 3.2</span>
+                            <span class="badge badge-ce">CE 2</span>
+                        </div>
+                        <span class="validation-def">« Utiliser des serveurs et des services réseaux virtualisés en
+                            appliquant les normes en vigueur et les bonnes pratiques architecturales et de sécurité
+                            »</span>
+                        <div class="validation-action">J'ai configuré un environnement isolé sous Linux hébergeant des
+                            services web et de messagerie interconnectés.</div>
+                    </div>
+                    <div class="validation-item">
+                        <div class="badge-container">
+                            <span class="badge badge-ac">AC 3.3</span>
+                            <span class="badge badge-ce">CE 1</span>
+                        </div>
+                        <span class="validation-def">« Sécuriser les services et données d’un système en sécurisant le
+                            système d'information »</span>
+                        <div class="validation-action">J'ai paramétré les pare-feu et les droits d'accès serveurs pour
+                            protéger l'infrastructure contre les intrusions et les fuites de données.</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projet 3 -->
+            <div class="vision-block"
+                style="border-left-color: var(--color-purple); background: linear-gradient(90deg, rgba(189, 0, 255, 0.05) 0%, rgba(17, 0, 28, 0.6) 100%);">
+                <h3 style="color: var(--color-purple);">3. Moteur de Jeu Pokémon (Java / JavaFX)</h3>
+                <p><strong>Description :</strong> Développement d'une application logicielle complète utilisant la POO
+                    avancée pour simuler des combats au tour par tour.</p>
+                <p><strong>Compétences mobilisées :</strong> Ce projet mobilise la Compétence 5 (Projet) pour
+                    l'évaluation des ressources et la Compétence 3 (Systèmes) pour la stabilité applicative.</p>
+                <h4>Validations :</h4>
+                <div class="validations-list">
+                    <div class="validation-item">
+                        <div class="badge-container">
+                            <span class="badge badge-ac">AC 5.3</span>
+                            <span class="badge badge-ce">CE 4</span>
+                        </div>
+                        <span class="validation-def">« Identifier les critères de faisabilité d’un projet informatique
+                            en adoptant une démarche proactive, créative et critique »</span>
+                        <div class="validation-action">J'ai dû adapter le périmètre fonctionnel du jeu en fonction du
+                            temps imparti, en priorisant le moteur de combat sur les aspects purement visuels.</div>
+                    </div>
+                    <div class="validation-item">
+                        <div class="badge-container">
+                            <span class="badge badge-ac">AC 3.1</span>
+                            <span class="badge badge-ce">CE 4</span>
+                        </div>
+                        <span class="validation-def">« Concevoir et développer des applications communicantes en
+                            assurant la continuité d'activité »</span>
+                        <div class="validation-action">J'ai structuré le code pour que le moteur de jeu gère les erreurs
+                            de logique interne sans interrompre l'expérience utilisateur (stabilité du système).</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projet 4 -->
+            <div class="vision-block"
+                style="border-left-color: var(--color-cyan); background: linear-gradient(90deg, rgba(0, 221, 255, 0.05) 0%, rgba(17, 0, 28, 0.6) 100%);">
+                <h3 style="color: var(--color-cyan);">4. Interface Station Météo (Partenariat IEM)</h3>
+                <p><strong>Description :</strong> Création d'une interface web (PHP/JS) pour interroger une base de
+                    données météorologiques et restituer les historiques sous forme de graphiques.</p>
+                <p><strong>Compétences mobilisées :</strong> Ce projet est centré sur la Compétence 4 (Gérer des
+                    données) pour l'optimisation et la visualisation des informations.</p>
+                <h4>Validations :</h4>
+                <div class="validations-list">
+                    <div class="validation-item">
+                        <div class="badge-container">
+                            <span class="badge badge-ac">AC 4.1</span>
+                            <span class="badge badge-ce">CE 4</span>
+                        </div>
+                        <span class="validation-def">« Optimiser les modèles de données de l’entreprise en assurant la
+                            cohérence et la qualité »</span>
+                        <div class="validation-action">J'ai réorganisé les tables SQL pour indexer les relevés par date
+                            et type de capteur, améliorant ainsi drastiquement la vitesse de génération des historiques.
+                        </div>
+                    </div>
+                    <div class="validation-item">
+                        <div class="badge-container">
+                            <span class="badge badge-ac">AC 4.3</span>
+                            <span class="badge badge-ce">CE 3</span>
+                        </div>
+                        <span class="validation-def">« Organiser la restitution de données à travers la programmation et
+                            la visualisation en s'appuyant sur des bases mathématiques »</span>
+                        <div class="validation-action">J'ai développé des scripts JavaScript calculant des moyennes
+                            glissantes et des tendances pour afficher des graphiques météorologiques exploitables par
+                            les chercheurs.</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Expérience 5 -->
+            <div class="vision-block"
+                style="border-left-color: var(--color-green); background: linear-gradient(90deg, rgba(0, 255, 115, 0.05) 0%, rgba(17, 0, 28, 0.6) 100%);">
+                <h3 style="color: var(--color-green);">5. Expérience : Immersion Division Cyber (Police Judiciaire)</h3>
+                <p><strong>Description :</strong> Stage d'une semaine au sein d'une unité spécialisée dans la lutte
+                    contre la cybercriminalité et l'analyse de preuves numériques.</p>
+                <p><strong>Compétences mobilisées :</strong> Cette immersion valide la compréhension des processus
+                    organisationnels (Compétence 5) et la manipulation de données variées (Compétence 4).</p>
+                <h4>Validations :</h4>
+                <div class="validations-list">
+                    <div class="validation-item">
+                        <div class="badge-container">
+                            <span class="badge badge-ac">AC 5.1</span>
+                            <span class="badge badge-ce">CE 2</span>
+                        </div>
+                        <span class="validation-def">« Identifier les processus présents dans une organisation en vue
+                            d’améliorer les systèmes d’information en respectant les règles juridiques et les normes en
+                            vigueur »</span>
+                        <div class="validation-action">J'ai analysé comment les procédures d'enquête s'insèrent dans le
+                            cadre légal du secret de l'instruction pour garantir l'intégrité de la chaîne de preuve.
+                        </div>
+                    </div>
+                    <div class="validation-item">
+                        <div class="badge-container">
+                            <span class="badge badge-ac">AC 4.4</span>
+                            <span class="badge badge-ce">CE 1</span>
+                        </div>
+                        <span class="validation-def">« Manipuler des données hétérogènes en respectant les
+                            réglementations sur le respect de la vie privée »</span>
+                        <div class="validation-action">J'ai observé les techniques d'extraction de données depuis des
+                            supports variés (images disque, logs, fichiers chiffrés) tout en respectant les protocoles
+                            de confidentialité.</div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Raphaël Fouque.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
