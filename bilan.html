@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mes Réalisations - Raphaël Fouque</title>
+    <title>Bilan des Apprentissages - Raphaël Fouque</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -15,8 +15,8 @@
             <a href="index.html" class="logo">Raphaël FOUQUE</a>
             <ul>
                 <li><a href="index.html">Accueil</a></li>
-                <li><a href="realisations.html" class="active">Réalisations</a></li>
-                <li><a href="bilan.html">Bilan</a></li>
+                <li><a href="realisations.html">Réalisations</a></li>
+                <li><a href="bilan.html" class="active">Bilan</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -123,6 +123,85 @@
                     padding-left: 15px;
                     border-left: 2px solid var(--color-purple);
                 }
+
+                .trace-gallery-wrapper {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    margin-top: 25px;
+                }
+
+                .trace-gallery {
+                    display: flex;
+                    gap: 20px;
+                    overflow-x: auto;
+                    scroll-snap-type: x mandatory;
+                    scroll-behavior: smooth;
+                    padding: 15px 0;
+                    width: 100%;
+                    -ms-overflow-style: none;
+                    scrollbar-width: none;
+                }
+
+                .trace-gallery::-webkit-scrollbar {
+                    display: none;
+                }
+
+                .trace-gallery img {
+                    height: 380px;
+                    width: 100%;
+                    flex: 0 0 100%;
+                    border-radius: 12px;
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+                    object-fit: contain;
+                    background: transparent;
+                    scroll-snap-align: center;
+                    cursor: pointer;
+                    margin: 0;
+                }
+
+                .trace-gallery img:hover {
+                    transform: scale(1.02);
+                    box-shadow: 0 8px 25px rgba(0, 255, 115, 0.3);
+                    border-color: var(--color-green);
+                    z-index: 10;
+                    position: relative;
+                }
+
+                .carousel-btn {
+                    background: rgba(0, 0, 0, 0.6);
+                    color: white;
+                    border: 1px solid rgba(255, 255, 255, 0.2);
+                    border-radius: 50%;
+                    width: 45px;
+                    height: 45px;
+                    font-size: 1.2rem;
+                    cursor: pointer;
+                    position: absolute;
+                    z-index: 10;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: all 0.3s ease;
+                    backdrop-filter: blur(5px);
+                }
+
+                .carousel-btn:hover {
+                    background: var(--color-green);
+                    color: #000;
+                    transform: scale(1.1);
+                    box-shadow: 0 0 15px var(--color-green);
+                    border-color: var(--color-green);
+                }
+
+                .prev-btn {
+                    left: -20px;
+                }
+
+                .next-btn {
+                    right: -20px;
+                }
             </style>
 
             <!-- Projet 1 -->
@@ -179,6 +258,16 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="trace-gallery-wrapper">
+                    <button class="carousel-btn prev-btn" onclick="scrollGallery(this, -1)">&#10094;</button>
+                    <div class="trace-gallery">
+                        <img src="images/p1_i1.png" alt="Projet 1 - Illustration 1">
+                        <img src="images/p1_i2.png" alt="Projet 1 - Illustration 2">
+                        <img src="images/p1_i3.png" alt="Projet 1 - Illustration 3">
+                    </div>
+                    <button class="carousel-btn next-btn" onclick="scrollGallery(this, 1)">&#10095;</button>
+                </div>
             </div>
 
             <!-- Projet 2 -->
@@ -213,6 +302,16 @@
                             protéger l'infrastructure contre les intrusions et les fuites de données.</div>
                     </div>
                 </div>
+
+                <div class="trace-gallery-wrapper">
+                    <button class="carousel-btn prev-btn" onclick="scrollGallery(this, -1)">&#10094;</button>
+                    <div class="trace-gallery">
+                        <img src="images/p2_i1.png" alt="Projet 2 - Illustration 1">
+                        <img src="images/p2_i2.png" alt="Projet 2 - Illustration 2">
+                        <img src="images/p2_i3.png" alt="Projet 2 - Illustration 3">
+                    </div>
+                    <button class="carousel-btn next-btn" onclick="scrollGallery(this, 1)">&#10095;</button>
+                </div>
             </div>
 
             <!-- Projet 3 -->
@@ -245,6 +344,16 @@
                         <div class="validation-action">J'ai structuré le code pour que le moteur de jeu gère les erreurs
                             de logique interne sans interrompre l'expérience utilisateur (stabilité du système).</div>
                     </div>
+                </div>
+
+                <div class="trace-gallery-wrapper">
+                    <button class="carousel-btn prev-btn" onclick="scrollGallery(this, -1)">&#10094;</button>
+                    <div class="trace-gallery">
+                        <img src="images/p3_i1.png" alt="Projet 3 - Illustration 1">
+                        <img src="images/p3_i2.png" alt="Projet 3 - Illustration 2">
+                        <img src="images/p3_i3.png" alt="Projet 3 - Illustration 3">
+                    </div>
+                    <button class="carousel-btn next-btn" onclick="scrollGallery(this, 1)">&#10095;</button>
                 </div>
             </div>
 
@@ -279,6 +388,12 @@
                         <div class="validation-action">J'ai développé des scripts JavaScript calculant des moyennes
                             glissantes et des tendances pour afficher des graphiques météorologiques exploitables par
                             les chercheurs.</div>
+                    </div>
+                </div>
+
+                <div class="trace-gallery-wrapper">
+                    <div class="trace-gallery">
+                        <img src="images/p4_i1.jpg" alt="Projet 4 - Illustration 1">
                     </div>
                 </div>
             </div>
@@ -317,6 +432,12 @@
                             de confidentialité.</div>
                     </div>
                 </div>
+
+                <div class="trace-gallery-wrapper">
+                    <div class="trace-gallery">
+                        <img src="images/p5_i1.jpeg" alt="Projet 5 - Illustration 1">
+                    </div>
+                </div>
             </div>
 
         </section>
@@ -328,6 +449,54 @@
         </div>
     </footer>
 
+    <script>
+        function updateArrows(gallery) {
+            const wrapper = gallery.parentElement;
+            const prevBtn = wrapper.querySelector('.prev-btn');
+            const nextBtn = wrapper.querySelector('.next-btn');
+
+            // Cache la flèche de gauche si on est tout au début
+            if (prevBtn) {
+                prevBtn.style.display = gallery.scrollLeft <= 5 ? 'none' : 'flex';
+            }
+
+            // Cache la flèche de droite si on est tout à la fin
+            if (nextBtn) {
+                const isAtEnd = gallery.scrollLeft + gallery.clientWidth >= gallery.scrollWidth - 5;
+                nextBtn.style.display = isAtEnd ? 'none' : 'flex';
+            }
+
+            // S'il n'y a qu'une seule image, on désactive les deux flèches
+            if (gallery.children.length <= 1) {
+                if (prevBtn) prevBtn.style.display = 'none';
+                if (nextBtn) nextBtn.style.display = 'none';
+            }
+        }
+
+        function scrollGallery(btn, direction) {
+            const gallery = btn.parentElement.querySelector('.trace-gallery');
+            const scrollAmount = gallery.clientWidth + 20; // largeur + gap
+            gallery.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const galleries = document.querySelectorAll('.trace-gallery');
+            galleries.forEach(gallery => {
+                // Initialise les flèches
+                updateArrows(gallery);
+
+                // Écoute le scroll naturel ou par bouton pour mettre à jour
+                gallery.addEventListener('scroll', () => {
+                    updateArrows(gallery);
+                });
+
+                // Gère le cas où l'utilisateur redimensionne la fenêtre
+                window.addEventListener('resize', () => {
+                    updateArrows(gallery);
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
